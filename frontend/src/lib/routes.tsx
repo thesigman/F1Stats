@@ -6,6 +6,8 @@ import Dashboard from "../pages/Overview";
 import Drivers from "../pages/Drivers";
 import Constructors from "../pages/Constructors";
 import Compare from "../pages/Compare";
+import DriverPage from "../pages/DriverPage";
+
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +30,10 @@ export const router = createBrowserRouter([
         path: "/compare",
         element: <Compare />,
       },
+      {
+    path: "/drivers/:driverId",
+    element: <DriverPage />,
+}
     ],
   },
 ]);
